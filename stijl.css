@@ -1,0 +1,231 @@
+/*MOODBOARD VOOR WEBSITE*/
+body {
+	font-family: helvetica;
+	font-size: 1.50rem;
+	width: 90vw;
+	margin: 5rem auto;
+  background-color: #363534;
+}
+
+main {
+	column-count: 1;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 2.6rem;
+	margin-bottom: 5vw;
+	color: white;
+}
+
+p{
+	color: white;
+}
+
+a {
+	display: block;
+	margin-bottom: 1rem;
+	break-inside: avoid;
+	text-decoration: none;
+	color: black;
+}
+
+h2 {
+  font-size: 1.3rem;
+	color: white;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+img:hover {
+	filter: grayscale(100%);
+	border-radius: 10%;
+}
+
+/*Ellen*/
+.menu {
+	position: fixed;
+	top: 2rem;
+	right: 7rem;
+}
+
+
+@media (min-width: 800px) {
+	main {
+		column-count: 2;
+		column-gap: 5rem;
+	}
+
+	nav {
+		background-color: #fa8072;
+		width: 5vw;
+		height: 40vw;
+		position: fixed;
+		top: 0;
+		right: 0;
+		margin-top: 11rem;
+		padding: 7rem;
+	}
+
+	nav a {
+		color: white;
+		margin-bottom: 2rem;
+		margin-right: 2rem
+		font-weight: 300;
+	}
+}
+
+@media (min-width: 1100px) {
+	main {
+		column-count: 3;
+		column-gap: 5rem;
+	}
+}
+
+
+/*LICHTE EN DONKERE FUNCTIE*/
+nav {
+	margin-bottom: 1rem;
+	display: none;
+	flex-direction: column;
+}
+
+nav a {
+	color: black; //kleur van de tekst van het menu
+	text-decoration: none;
+	font-size: 1rem;
+	padding: .3rem;
+}
+
+body.light {
+	background-color: white;
+}
+
+.light h2{
+	color: black;
+}
+
+.light p{
+	color: black;
+}
+
+.light h1, .light p {
+	color: black;
+}
+
+.light nav a:nth-child(2) {
+	background-color: #fa8072;
+	color: white;
+}
+
+nav a:nth-child(1) {
+	background-color: #fa8072;
+	color: white;
+}
+
+.light nav a:nth-child(1) {
+	background-color: none;
+	color: black;
+}
+
+
+/*SLIDESHOW*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
